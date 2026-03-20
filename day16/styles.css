@@ -1,0 +1,141 @@
+/* 기본 배경 및 폰트 설정 */
+body {
+    font-family: 'Pretendard', Arial, sans-serif;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: #1a73e8;
+    margin-bottom: 30px;
+}
+
+/* 도서 입력 컨테이너 */
+.book-container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 입력창 스타일 */
+.book-input {
+    width: calc(45% - 10px);
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.book-input:focus {
+    border-color: #1a73e8;
+}
+
+/* 버튼 공통 스타일 */
+.book-button {
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    transition: all 0.2s;
+    background-color: #1a73e8;
+    color: white;
+}
+
+.book-button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/* 도서 목록 리스트 */
+.book-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+/* 개별 도서 아이템 */
+.book-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    margin: 8px 0;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.book-item:hover {
+    background-color: #f1f3f4;
+}
+
+.book-item span {
+    font-weight: 500;
+    color: #444;
+}
+
+/* 목록 내 버튼 (삭제, 대여/반납) */
+.book-item button {
+    padding: 5px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.book-item button:first-of-type:hover {
+    background-color: #fee;
+    color: #d93025;
+    border-color: #d93025;
+}
+
+.book-item button:last-of-type:hover {
+    background-color: #e8f0fe;
+    color: #1a73e8;
+    border-color: #1a73e8;
+}
+
+/* 결과 표시 영역 */
+#results {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f1f3f4;
+    border-radius: 8px;
+    border-left: 5px solid #1a73e8;
+}
+
+#results h3 {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #1a73e8;
+}
+
+#results ul {
+    list-style: none;
+    padding: 0;
+}
+
+#results li {
+    padding: 4px 0;
+    font-size: 14px;
+    border-bottom: 1px dashed #ccc;
+}
+
+#results p {
+    font-size: 16px;
+    margin-top: 10px;
+}
